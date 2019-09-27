@@ -405,11 +405,18 @@ s(
     'org.apache.tez.dag.history.logging.ats.TimelineCachePluginImpl',
     'Set up tez UI'
 )
+
 s(
     'mapred-site',
     'mapreduce.job.acl-view-job',
     '*',
     'Enable tez ui for mapred jobs'
+)
+b(
+    'tez-site',
+    'tez.am.acls.enabled',
+    'false',
+    'Enable refreshes on tez-ui by disabling ACLs'
 )
 
 info.append("\nCompress all")
